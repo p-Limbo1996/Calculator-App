@@ -1,0 +1,219 @@
+@font-face {
+  font-family: poppin;
+  src: url(../font/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: digital;
+  src: url(../font/digital-7.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppin;
+}
+
+body {
+  background-image: url(../img/pexels-scottwebb-2117937.jpg);
+  background-blend-mode: exclusion;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(96, 96, 96, 0.815);
+}
+#limbo,
+#limbo span {
+  user-select: none;
+}
+#limbo {
+  font-family: poppin;
+  letter-spacing: 10px;
+  padding-top: 10px;
+  color: #161515;
+  margin-top: 10px;
+  margin-bottom: -15px;
+  font-size: 20px;
+  font-weight: 600;
+  position: relative;
+}
+#limbo span {
+  position: absolute;
+  font-family: digital;
+  font-weight: 300;
+  font-size: 15px;
+  padding: 5px;
+  color: #ffffff;
+  opacity: 60%;
+  background-color: #ee5e04f6;
+  border-radius: 30% 60% 30% 60%;
+  letter-spacing: 2px;
+  right: -22px;
+  top: 5px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  max-width:400px;
+  margin: 0 auto;
+  height: auto;
+  background-color: rgb(60, 61, 61);
+  border-radius: 20px;
+  box-shadow: 20px 30px 20px 15px rgba(49, 49, 49, 0.654),
+    100px 200px 200px 0px rgba(156, 153, 153, 0.152) inset,
+    -10px -10px 20px 10px rgba(66, 63, 63, 0.138) inset,
+    -10px 10px 20px 4px rgba(49, 49, 49, 0.15);
+}
+
+input {
+  text-align: right;
+  font-family: digital;
+  font-weight: 900;
+  font-size: 4rem;
+  width: 90%;
+  height: 110px;
+  padding: 40px;
+  border-radius: 15px;
+  background-color: rgb(103, 103, 103);
+  margin: 25px 0;
+  border: none;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  box-shadow: 0px 3px 0px 4px rgba(0, 0, 0, 0.5),
+    5px 3px 5px 4px rgba(49, 49, 49, 0.5) inset;
+}
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin-bottom: 10px;
+}
+.row button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  padding: 40px 40px;
+  font-size: 1.8rem;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+  background: transparent;
+  box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.2) inset,
+    2px 5px 5px 1px rgba(20, 20, 20, 0.146),
+    0px 0px 10px 2px rgba(124, 120, 120, 0.38) inset,
+    5px -2px 5px 0px rgba(96, 95, 95, 0.314),
+    0px 1px 4px 1px rgba(15, 14, 14, 0.5),
+    5px 3px 5px 4px rgba(49, 49, 49, 0.5) inset;
+  color: rgb(157, 155, 155);
+
+  transition: all 0.2s;
+}
+.row button:hover {
+  background-color: rgb(102, 101, 101);
+  color: rgb(222, 216, 216);
+}
+
+.row button:active {
+  background-color: rgb(202, 197, 197);
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.381) inset,
+    -1px 0px 3px 1px rgba(149, 148, 148, 0.701);
+  color: rgb(33, 32, 32);
+}
+.row .equl {
+  width: 168px;
+  border-radius: 40%;
+  
+}
+.row .operator {
+  color: #ea630f;
+
+  font-weight: 900;
+}
+
+.row .operator:hover {
+  color: #ff6200;
+}
+.row .operator:active {
+  background-color: #ff62008d;
+  color: rgb(255, 255, 255);
+  box-shadow: 5px 5px 5px 0px rgba(192, 83, 6, 0.381) inset,
+    -1px 0px 3px 1px rgba(204, 75, 11, 0.701);
+  color: rgb(33, 32, 32);
+}
+
+
+@media (max-width: 500px) {
+
+  .container {
+    max-width:310px;
+  }
+  
+  input {
+    font-size: 3rem;
+    height: 70px;
+    padding: 25px;
+  }
+  .row {
+    width: 100%;
+    display: flex;
+  
+  }
+  .row button {
+    height: 35px;
+    width: 35px;
+    padding: 30px 30px;
+    font-size: 1.5rem;
+  }
+
+
+  .row .equl {
+    width: 127px;
+
+  }
+  .row .operator {
+    color: #ea630f;
+    font-weight: 900;
+  }
+  
+}
+
+@media (max-width: 360px) {
+  .container {
+    max-width:280px;
+  }
+  input {
+    font-size: 2.5rem;
+    height: 60px;
+    padding: 20px;
+  }
+  .row button {
+    height: 25px;
+    width: 25px;
+    padding: 26px;
+    font-size: 1.5rem;
+  }
+  .row .equl {
+    width: 110px;
+  }
+
+  #limbo {
+    font-family: poppin;
+    letter-spacing: 7px;
+    padding-top: 7px;
+    margin-top: 7px;
+    font-size: 18px;
+  }
+  #limbo span {
+    font-size: 13px;
+    padding: 3px;
+  }
+}
