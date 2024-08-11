@@ -49,7 +49,7 @@ To run this project locally, follow these steps:
 - **⚛️ React:** JavaScript library for building user interfaces.
 - **🎨 CSS:** Custom styling for the calculator layout.
 
-##📂 Project Structure
+📂 Project Structure
 src/
 ├── assets/               # 📁 Static assets like images, icons, and CSS
 │   ├── img/
