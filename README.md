@@ -49,22 +49,20 @@ To run this project locally, follow these steps:
 - **⚛️ React:** JavaScript library for building user interfaces.
 - **🎨 CSS:** Custom styling for the calculator layout.
 
-## 📂 Project Structure
+##📂 Project Structure
 src/
-│
-├── assets/ # 📁 Static assets like images, icons, and CSS
-│ ├── img/
-│ │ └── p-limbo1996.github.io_Calculator-App_.png
-│ └── css/
-│     └── index.css # 🎨 Global styles for the calculator
-│
+├── assets/               # 📁 Static assets like images, icons, and CSS
+│   ├── img/
+│   │   └── p-limbo1996.github.io_Calculator-App_.png
+│   └── css/
+│       └── index.css     # 🎨 Global styles for the calculator
 ├── components/
-│ ├── App.js # 🧮 Main Calculator component
-│ └── button/
-│     └── Button.js # 🔘 Button component
-│
-├── main.js # 🔌 Entry point for React
-└── index.html # 🖥️ Main HTML file
+│   ├── App.js            # 🧮 Main Calculator component
+│   └── button/
+│       └── Button.js     # 🔘 Button component
+├── main.js               # 🔌 Entry point for React
+└── index.html            # 🖥️ Main HTML file
+
 
 
 ## 📋 Usage
