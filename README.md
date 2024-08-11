@@ -52,21 +52,20 @@ To run this project locally, follow these steps:
 ## 📂 Project Structure
 src/
 │
-├── assets/ # 📁 Static assets like images and icons
-│ └── img/
-│ └── p-limbo1996.github.io_Calculator-App_.png
+├── assets/ # 📁 Static assets like images, icons, and CSS
+│ ├── img/
+│ │ └── p-limbo1996.github.io_Calculator-App_.png
+│ └── css/
+│     └── index.css # 🎨 Global styles for the calculator
 │
 ├── components/
 │ ├── App.js # 🧮 Main Calculator component
 │ └── button/
-│ └── Button.js # 🔘 Button component
-│
-├── assets/
-│ └── css/
-│ └── index.css # 🎨 Global styles for the calculator
+│     └── Button.js # 🔘 Button component
 │
 ├── main.js # 🔌 Entry point for React
 └── index.html # 🖥️ Main HTML file
+
 
 ## 📋 Usage
 
